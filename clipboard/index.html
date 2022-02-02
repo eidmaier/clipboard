@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+
+	<title>Copiar para área de transferência (Clipboard)</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="prism.css" rel="stylesheet" />
+	<link href="https://{{cdn}}/prism@v1.x/themes/prism.css" rel="stylesheet" />
+	<link href="style.css" rel="stylesheet" />
+
+	<script src="script.js"></script>
+	<script src="prism.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="dist/clipboard.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>	
+	<!-- <script src="jquery-3.3.1.js"></script> -->
+	
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="clipboard">
+
+<pre class="pre-scrollable" >
+<code id="codigo" class="language-css"><div id="myDiv">
+	&lt;!DOCTYPE html&gt;<br>
+	&lt;html&gt;<br>
+	&lt;body&gt;<br>
+	<br>
+	&lt;h1&gt;Testing an HTML Syntax Highlighter&lt;/h2&gt;<br>
+	&lt;p&gt;Hello world!&lt;/p&gt;<br>
+	&lt;a href="https://www.w3schools.com"&gt;Back to School&lt;/a&gt;<br>
+	<br>
+	&lt;/body&gt;<br>
+	&lt;/html&gt;
+	</div></code>
+</pre>
+
+					<div>
+						<button type="button" style="display: none;" class="btn" data-clipboard-snippet=""><img
+								class="clippy" width="13" src="imgs/clippy.png" alt="Copy to clipboard"
+						></button>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<script>
+		document.getElementById("dataCopiar").innerHTML = dataCopiar();
+	</script>
+	
+</body>
+
+</html>
